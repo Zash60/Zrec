@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zrec</string>
+
+    <!-- Configurações -->
+    <string name="settings_title">Configurações</string>
+    <string name="nav_back">Voltar</string>
+
+    <string name="section_video">VÍDEO</string>
+    <string name="section_audio">ÁUDIO INTERNO</string>
+    <string name="section_general">GERAL</string>
+
+    <string name="resolution_title">Resolução</string>
+    <string name="resolution_summary">Tamanho máximo do vídeo (mantém a proporção da tela)</string>
+
+    <string name="bitrate_title">Qualidade (taxa de bits)</string>
+    <string name="bitrate_summary">Bits por segundo do vídeo — maior = melhor e arquivo maior</string>
+
+    <string name="framerate_title">Taxa de quadros</string>
+    <string name="framerate_summary">Quadros por segundo do vídeo</string>
+
+    <string name="orientation_title">Orientação</string>
+    <string name="orientation_summary">Automático: como a tela está · Retrato/Paisagem: 9:16/16:9 com barras, sem distorção</string>
+
+    <string name="iframe_title">Intervalo de keyframe</string>
+    <string name="iframe_summary">Frequência dos quadros-chave — menor facilita pular no vídeo</string>
+
+    <string name="audio_internal_title">Áudio interno</string>
+    <string name="audio_internal_summary">Captura o som de apps, mídia e jogos — o microfone nunca é usado. Desative para gravar só o vídeo</string>
+
+    <string name="audio_bitrate_title">Qualidade do áudio</string>
+    <string name="audio_bitrate_summary">Taxa de bits do áudio AAC</string>
+
+    <string name="audio_channels_title">Canais</string>
+    <string name="audio_channels_summary">Estéreo é o padrão; mono gera arquivos menores</string>
+
+    <string name="audio_sample_rate_title">Taxa de amostragem</string>
+    <string name="audio_sample_rate_summary">48 kHz é o padrão; 44,1 kHz pode ajudar em aparelhos antigos</string>
+
+    <string name="keep_screen_on_title">Manter tela ligada</string>
+    <string name="keep_screen_on_summary">Evita que o Android pare a gravação ao bloquear a tela (recomendado)</string>
+
+    <string name="vibrate_title">Vibrar ao iniciar/parar</string>
+    <string name="vibrate_summary">Vibração curta como confirmação tátil</string>
+
+    <string name="restore_title">Restaurar padrões</string>
+    <string name="restore_summary">Volta todas as opções aos valores originais</string>
+
+    <string name="changes_note">As alterações valem para a próxima gravação.\nFormato de saída: MP4 em Movies/Zrec.</string>
+
+    <string name="dialog_close">Fechar</string>
+
+    <string name="language_title">Idioma</string>
+    <string name="language_summary">Idioma da interface do app</string>
+    <string name="language_english">Inglês</string>
+    <string name="language_portuguese">Português</string>
+
+    <string name="reset_title">Restaurar padrões?</string>
+    <string name="reset_message">Todas as opções voltam aos valores originais do Zrec.</string>
+    <string name="reset_confirm">Restaurar</string>
+    <string name="reset_cancel">Cancelar</string>
+
+    <!-- Rótulos dos enums de vídeo -->
+    <string name="res_native">Automática (nativa)</string>
+    <string name="res_1080p">1080p</string>
+    <string name="res_720p">720p</string>
+    <string name="res_480p">480p</string>
+
+    <string name="bitrate_low">Baixa (4 Mbps)</string>
+    <string name="bitrate_medium">Média (8 Mbps)</string>
+    <string name="bitrate_high">Alta (12 Mbps)</string>
+    <string name="bitrate_max">Máxima (20 Mbps)</string>
+
+    <string name="fps_24">24 fps</string>
+    <string name="fps_30">30 fps</string>
+    <string name="fps_60">60 fps</string>
+
+    <string name="orientation_auto">Automático</string>
+    <string name="orientation_portrait">Retrato</string>
+    <string name="orientation_landscape">Paisagem</string>
+
+    <string name="iframe_1s">A cada 1 s</string>
+    <string name="iframe_2s">A cada 2 s</string>
+    <string name="iframe_5s">A cada 5 s</string>
+
+    <!-- Rótulos dos enums de áudio -->
+    <string name="audio_bitrate_96">96 kbps</string>
+    <string name="audio_bitrate_128">128 kbps</string>
+    <string name="audio_bitrate_192">192 kbps</string>
+    <string name="audio_bitrate_256">256 kbps</string>
+
+    <string name="audio_channels_stereo">Estéreo</string>
+    <string name="audio_channels_mono">Mono</string>
+
+    <string name="audio_sample_rate_48">48 kHz</string>
+    <string name="audio_sample_rate_44">44,1 kHz</string>
+
+    <!-- Tela principal -->
+    <string name="toolbar_title">Zrec</string>
+    <string name="settings_cd">Configurações</string>
+
+    <string name="status_recording">GRAVANDO</string>
+    <string name="status_ready">PRONTO PARA GRAVAR</string>
+
+    <string name="hint_stop">Toque para parar</string>
+    <string name="hint_start">Toque para iniciar</string>
+
+    <string name="recordings_header">GRAVAÇÕES</string>
+    <string name="refresh_cd">Atualizar lista</string>
+
+    <string name="play_cd">Reproduzir</string>
+    <string name="share_cd">Compartilhar</string>
+    <string name="delete_cd">Excluir</string>
+    <string name="close_cd">Fechar</string>
+
+    <string name="delete_dialog_title">Excluir gravação?</string>
+    <string name="delete_dialog_body">%1$s\n\nO arquivo será removido deste aparelho.</string>
+    <string name="delete_confirm">Excluir</string>
+    <string name="delete_cancel">Cancelar</string>
+
+    <string name="empty_title">Nenhuma gravação ainda</string>
+    <string name="empty_sub">Toque no botão vermelho para gravar a tela.</string>
+
+    <string name="saved_banner">Salvo em Movies/Zrec:\n%1$s</string>
+
+    <string name="toggle_cd">zrec-toggle-recording</string>
+
+    <!-- MainActivity -->
+    <string name="audio_permission_msg">É preciso conceder a permissão de áudio para capturar o som interno</string>
+    <string name="capture_denied">Permissão de captura de tela negada</string>
+    <string name="open_no_app">Nenhum app instalado para abrir vídeo</string>
+    <string name="share_no_app">Nenhum app instalado para compartilhar</string>
+    <string name="delete_success">Gravação excluída</string>
+    <string name="delete_error">Não foi possível excluir a gravação</string>
+    <string name="open_chooser">Abrir com</string>
+    <string name="share_chooser">Compartilhar vídeo</string>
+
+    <!-- Serviço e notificação de gravação -->
+    <string name="notification_channel_name">Gravação de tela</string>
+    <string name="notification_channel_description">Mostra o andamento da gravação com áudio interno</string>
+    <string name="notification_content_title">Zrec — gravando</string>
+    <string name="notification_content_audio">Tela + áudio interno</string>
+    <string name="notification_content_noaudio">Somente tela (áudio desativado)</string>
+    <string name="notification_stop_action">Parar</string>
+
+    <string name="recording_interrupted">Gravação interrompida pelo sistema</string>
+    <string name="service_start_failed">Não foi possível iniciar o serviço de gravação</string>
+    <string name="capture_invalid">Não foi possível iniciar a captura (consentimento inválido)</string>
+
+    <!-- Engine de gravação -->
+    <string name="audio_unavailable_warn">Áudio interno indisponível neste aparelho — o vídeo foi salvo sem som</string>
+    <string name="start_failed">Falha ao iniciar a gravação</string>
+    <string name="no_media_captured">Nenhuma mídia foi capturada</string>
+    <string name="mp4_finalize_failed">Falha ao finalizar o MP4</string>
+    <string name="gallery_save_failed">Falha ao salvar o vídeo na galeria</string>
+    <string name="output_not_open">Arquivo de saída não está aberto</string>
+    <string name="output_open_failed">Não foi possível abrir a saída</string>
+</resources>
