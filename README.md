@@ -57,3 +57,20 @@ Kotlin · Jetpack Compose (Material 3) · MediaProjection · MediaCodec · Media
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+## Release signing
+
+Release builds are signed via properties that are **never committed**. Set them in `~/.gradle/gradle.properties` or as environment variables:
+
+```properties
+ZREC_KEYSTORE_PATH=/path/to/zrec-release.jks
+ZREC_KEYSTORE_PASSWORD=...
+ZREC_KEY_ALIAS=zrec
+ZREC_KEY_PASSWORD=...
+```
+
+Then build:
+
+```bash
+./gradlew assembleRelease bundleRelease
+```

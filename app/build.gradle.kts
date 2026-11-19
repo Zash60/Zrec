@@ -21,12 +21,33 @@ android {
         versionName = "1.0"
     }
 
+    signingConfigs {
+        create("release") {
+            val storePath = findProperty("ZREC_KEYSTORE_PATH") as String?
+                ?: System.getenv("ZREC_KEYSTORE_PATH")
+            if (storePath != null) {
+                storeFile = file(storePath)
+                storePassword = findProperty("ZREC_KEYSTORE_PASSWORD") as String?
+                    ?: System.getenv("ZREC_KEYSTORE_PASSWORD")
+                keyAlias = findProperty("ZREC_KEY_ALIAS") as String?
+                    ?: System.getenv("ZREC_KEY_ALIAS")
+                keyPassword = findProperty("ZREC_KEY_PASSWORD") as String?
+                    ?: System.getenv("ZREC_KEY_PASSWORD")
+            }
+        }
+    }
+
     buildTypes {
         debug {
             isMinifyEnabled = false
         }
         release {
             isMinifyEnabled = true
+            val storePath = findProperty("ZREC_KEYSTORE_PATH") as String?
+                ?: System.getenv("ZREC_KEYSTORE_PATH")
+            if (storePath != null) {
+                signingConfig = signingConfigs.getByName("release")
+            }
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
