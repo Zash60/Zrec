@@ -1,5 +1,7 @@
 # Zrec
 
+[![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?logo=android&logoColor=white)](https://developer.android.com) [![Kotlin](https://img.shields.io/badge/Kotlin-2.2.10-7F52FF?logo=kotlin&logoColor=white)](https://kotlinlang.org) [![Jetpack Compose](https://img.shields.io/badge/Jetpack%20Compose-Material%203-4285F4?logo=jetpackcompose&logoColor=white)](https://developer.android.com/jetpack/compose) [![Min SDK](https://img.shields.io/badge/minSdk-29-blue)](https://developer.android.com/about/versions/10) [![Release](https://img.shields.io/github/v/release/Zash60/Zrec?include_prereleases)](https://github.com/Zash60/Zrec/releases) [![License](https://img.shields.io/github/license/Zash60/Zrec)](LICENSE)
+
 **Screen recorder for Android with internal audio capture — no microphone involved.**
 
 Zrec records your screen and the device's internal audio (app, media and game sound) into a single MP4 file, saved straight to `Movies/Zrec` where it shows up in any gallery app. Built with Kotlin and Jetpack Compose.
@@ -34,8 +36,6 @@ Zrec records your screen and the device's internal audio (app, media and game so
 
 The APK is generated at `app/build/outputs/apk/debug/app-debug.apk`.
 
-> Note: on aarch64 Linux hosts you may need to point Gradle at a working `aapt2` binary via `android.aapt2FromMavenOverride` in `gradle.properties` (see the comment in that file).
-
 ## How it works
 
 ```
@@ -57,20 +57,3 @@ Kotlin · Jetpack Compose (Material 3) · MediaProjection · MediaCodec · Media
 ## License
 
 MIT — see [LICENSE](LICENSE).
-
-## Release signing
-
-Release builds are signed via properties that are **never committed**. Set them in `~/.gradle/gradle.properties` or as environment variables:
-
-```properties
-ZREC_KEYSTORE_PATH=/path/to/zrec-release.jks
-ZREC_KEYSTORE_PASSWORD=...
-ZREC_KEY_ALIAS=zrec
-ZREC_KEY_PASSWORD=...
-```
-
-Then build:
-
-```bash
-./gradlew assembleRelease bundleRelease
-```
